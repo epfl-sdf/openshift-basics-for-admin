@@ -121,7 +121,45 @@ Les concernés sont :
 
 ### Profile
 
+Un noeud est défini par un profile qui contient :
+
+* Un nom (small, medium, large,...)
+
+. . .
+
+* Un quota de fichiers par application
+
+. . .
+
+* Un nombre maximum d'applications sur le noeud
+
+. . . 
+
+* Le nombre maximum de processeurs par applications
+
+. . . 
+
+* La limite de mémoire
+
+. . .
+
+* Et bien d'autres options...
+
+
 ### District
+
+Le district sert à regrouper des noeuds :
+
+* De même profile uniquement...
+
+. . . 
+
+* Mais pas forcément tous les noeuds du même profile !
+
+. . .
+
+
+
 
 ### SCHEMA organisation
 
