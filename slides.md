@@ -64,36 +64,41 @@ Un utilisateur peut :
 
 ### Les rôles dans Openshift
 
-* Broker
-* Nameserver
-* Datastore
-* MsgServer
 * Node
+    * Contient les applications des utilisateurs
 
-### Broker
+. . . 
 
-mcollective
+* Broker - MCollective
+    * Fourni une API REST à l'utilisateur
+    * Gère les noeuds
 
-### Nameserver
+. . .
 
-bind
+* Nameserver - Bind
+    * Serveur de noms pour Openshift
+        * Pour les hôtes d'Openshift
+        * Pour les applications
 
-### Datastore
+. . . 
 
-Mongodb
+* Datastore - MongoDB
+    * Base de Données
 
-### MsgServer
+. . .
 
-activemq
-
-### Node
-
-gear
+* MsgServer - ActiveMQ
+    * Serveur de messagerie
+    * Relie les brokers et les noeuds
 
 ### Interconnectivité
 
-SCHEMA
-
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\begin{figure}[htp]
+  \center
+  \includegraphics[width=8cm]{img/diagramme_relations_oo.png}
+  \caption{Connaissances entre les éléments d'Openshift}
+\end{figure}
 
 # Organisation des applications
 
@@ -155,6 +160,8 @@ maitre - esclave
 ### Conclusion
 
 ### Aller plus loin
+
+Test en local : github d'exemple
 
 ### La nouvelle version
 
