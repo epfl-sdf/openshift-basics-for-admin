@@ -4,9 +4,15 @@
 
 # Introduction
 
-### Openshift
+### Openshift Origin
 
-LOGO
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\begin{figure}[htp]
+  \center
+  \includegraphics[width=8cm]{img/openshift-origin-logo.png}
+  \caption{Openshift Origin - The Opensource version of Openshift}
+\end{figure}
+
 
 ### Qu'est-ce qu'Openshift ?
 
@@ -22,11 +28,36 @@ LOGO
 
 . . .
 
-* ...
+* Accès aux machines contenant les applications via SSH
+
+. . .
+
+* Gestion du code des applications par git
+
 
 ### Que peut-on faire avec ?
 
-cartridges, applications, git, ssh
+Un utilisateur peut :
+
+* Installer des applications (Wordpress par ex.)
+
+. . .
+
+* Créer ses applications (Ruby, Python, PHP,...)
+
+. . .
+
+* Créer ses propres cartridges
+    * Ajoute une fonctionnalité à une application
+        * Ruby, Jenkins, PHP,...
+
+. . .
+
+* Accéder à ses machines via SSH
+
+. . .
+
+* Gérer ses applications via git
 
 
 # Architecture
@@ -125,4 +156,27 @@ maitre - esclave
 
 ### Aller plus loin
 
-Liens
+### La nouvelle version
+
+Openshift Origin 3 contient :
+
+* Création d'applications dans un Docker[^1]
+
+. . .
+
+* Utilisation de Kubernetes comme orchestrateur de containers[^2]
+
+. . .
+
+* Projet Atomic comme système d'exploitation[^3]
+
+
+[^1]: [https://www.docker.com/whatisdocker][docker]
+
+[^2]: [http://kubernetes.io/][kubernetes]
+
+[^3]: [http://www.projectatomic.io/docs/][atomic]
+
+[docker]: https://www.docker.com/whatisdocker
+[kubernetes]: http://kubernetes.io/
+[atomic]: http://www.projectatomic.io/docs/
