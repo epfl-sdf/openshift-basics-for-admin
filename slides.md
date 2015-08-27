@@ -64,18 +64,18 @@ Un utilisateur peut :
 
 ### Les rôles dans Openshift
 
-* Node
+* Node MCollective Agent
     * Contient les applications des utilisateurs
 
 . . . 
 
-* Broker - MCollective
-    * Fourni une API REST à l'utilisateur
+* Broker - MCollective Client
+    * Fournit une API REST à l'utilisateur
     * Gère les noeuds
 
 . . .
 
-* Nameserver - Bind
+* Nameserver - BIND
     * Serveur de noms pour Openshift
         * Pour les hôtes d'Openshift
         * Pour les applications
@@ -100,6 +100,15 @@ Un utilisateur peut :
   \caption{Connaissances entre les éléments d'Openshift}
 \end{figure}
 
+### Architecture - Résumé
+
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\begin{figure}[htp]
+  \center
+  \includegraphics[width=9cm]{img/resume.jpg}
+  \caption{Source: Openshift Enterprise par Ali Sadeghi Ardestani}
+\end{figure}
+
 # Organisation des applications
 
 ### Qui est concerné ?
@@ -110,6 +119,7 @@ Les concernés sont :
 
 * Broker
     * Organise les regroupements de noeuds
+    * Place les applications dans les noeuds
 
 . . .
 
@@ -158,14 +168,56 @@ Le district sert à regrouper des noeuds :
 
 . . .
 
+Pourquoi un district ?
+
+. . . 
+
+* Choix du noeud dans le district pour une application
+
+. . .
+
+* Réplication d'applications dans des noeuds du même district (HA Proxy)
 
 
+### Possibilité d'utilisation
 
-### SCHEMA organisation
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\begin{figure}[htp]
+  \center
+  \includegraphics[width=8cm]{img/openshift-enterprise-24-638.jpg}
+  \caption{Source: Openshift Enterprise par Ali Sadeghi Ardestani}
+\end{figure}
 
-### Démonstration
+### Quelques commandes pour gérer les noeuds
 
-Ligne de commande
+* Créer un district
+```sh
+# oo-admin-ctl-district -c create -n <district_name> \ 
+-p <profile>
+```
+
+. . . 
+
+* Lister les districts
+```sh
+# oo-admin-ctl-district
+```
+
+. . . 
+
+* Ajouter un noeud à un district
+```sh
+# oo-admin-ctl-district -c add-node -n <district_name> \
+-i <node_name>
+```
+
+. . . 
+
+* Activer les cartridges
+```sh
+# oo-admin-ctl-cartridge -c import-node \
+-n <district_name> --activate
+```
 
 
 # Haute disponibilité
@@ -199,7 +251,8 @@ maitre - esclave
 
 ### Aller plus loin
 
-Test en local : github d'exemple
+* Slides d'Openshift Enterprise : http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
+* Test en local : github d'exemple
 
 ### La nouvelle version
 
