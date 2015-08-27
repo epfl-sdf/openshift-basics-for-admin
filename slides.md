@@ -9,7 +9,7 @@
 \setbeamertemplate{caption}{\raggedright\insertcaption\par}
 \begin{figure}[htp]
   \center
-  \includegraphics[width=8cm]{img/openshift-origin-logo.png}
+  \includegraphics[width=5cm]{img/openshift-origin-logo.png}
   \caption{Openshift Origin - The Opensource version of Openshift}
 \end{figure}
 
