@@ -219,24 +219,12 @@ Pourquoi un district ?
 -n <district_name> --activate
 ```
 
-
-# Haute disponibilité
-
-### Broker (HA Proxy)
-
-maitre - esclave
-
-### Datastore (Redondance)
-
-### MsgServer (Redondance)
-
-
 # Installation via Puppet
 
 ### Module Openshift Origin
 
 * Installation d'Openshift automatisée
-    * Spécification des rôles
+    * Spécification des rôles pour une machine
 
 . . . 
 
@@ -245,18 +233,59 @@ maitre - esclave
     * Datastore
     * MsgServer
 
+. . .
+
+* Utilisation de Consul pour la reconnaissance entre noeuds d'une même instance
+
 # Conclusion
 
 ### Conclusion
 
+* Machines accessibles simplement et rapidement pour l'utilisateur
+
+. . .
+
+* Gestion des noeuds relativement simple
+
+. . .
+
+* Scalable facilement
+
+. . .
+
+* Permet le déploiement d'environnement de développement et de production facilement
+
 ### Aller plus loin
 
-* Slides d'Openshift Enterprise : http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
-* Test en local : github d'exemple
+* Openshift : [https://www.openshift.com/][openshift]
+
+. . .
+
+* Test en local : 
+[https://github.com/AblionGE/puppet-openshift-origin-example][exemple]
+
+. . .
+
+* Slides d'Openshift Enterprise par Ali Sadeghi Ardestani : [http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift][OE]
+
+. . .
+
+* Documentation d'Openshift Origin M4 : [https://docs.openshift.org/origin-m4/index.html][doc]
+
+. . .
+
+* Pour jouer : URL d'Openshift à l'EPFL
+
+
+[openshift]: https://www.openshift.com/
+[exemple]: https://github.com/AblionGE/puppet-openshift-origin-example
+[OE]: http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
+[doc]: https://docs.openshift.org/origin-m4/index.html
+
 
 ### La nouvelle version
 
-Openshift Origin 3 contient :
+Openshift Origin 3 sorti en juin 2015 contient :
 
 * Création d'applications dans un Docker[^1]
 
@@ -270,9 +299,7 @@ Openshift Origin 3 contient :
 
 
 [^1]: [https://www.docker.com/whatisdocker][docker]
-
 [^2]: [http://kubernetes.io/][kubernetes]
-
 [^3]: [http://www.projectatomic.io/docs/][atomic]
 
 [docker]: https://www.docker.com/whatisdocker
