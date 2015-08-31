@@ -64,7 +64,7 @@ Un utilisateur peut :
 
 ### Les rôles dans Openshift
 
-* Node MCollective Agent
+* Node - MCollective Agent
     * Contient les applications des utilisateurs
 
 . . . 
@@ -274,13 +274,14 @@ Pourquoi un district ?
 
 . . .
 
-* Pour jouer : URL d'Openshift à l'EPFL
+* Pour jouer : [https://openshift-demo.si.epfl.ch][openshift-demo]
 
 
 [openshift]: https://www.openshift.com/
 [exemple]: https://github.com/AblionGE/puppet-openshift-origin-example
 [OE]: http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
 [doc]: https://docs.openshift.org/origin-m4/index.html
+[openshift-demo]: https://openshift-demo.si.epfl.ch
 
 
 ### La nouvelle version
