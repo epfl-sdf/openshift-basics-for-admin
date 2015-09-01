@@ -190,6 +190,13 @@ Pourquoi un district ?
 
 ### Quelques commandes pour gérer les noeuds
 
+* Lister les noeuds libres
+```sh
+# oo-admin-ctl-district -c list-available
+```
+
+. . .
+
 * Créer un district
 ```sh
 # oo-admin-ctl-district -c create -n <district_name> \ 
