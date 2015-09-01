@@ -281,7 +281,7 @@ Pourquoi un district ?
 
 . . .
 
-* Pour jouer : [https://openshift-demo.si.epfl.ch][openshift-demo]
+* Pour jouer : [https://openshift-demo.si.epfl.ch][openshift-demo][^4]
 
 
 [openshift]: https://www.openshift.com/
@@ -289,6 +289,7 @@ Pourquoi un district ?
 [OE]: http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
 [doc]: https://docs.openshift.org/origin-m4/index.html
 [openshift-demo]: https://openshift-demo.si.epfl.ch
+[^4]: Pour accéder aux applications, il faut ajouter dans votre fichier /etc/resolv.conf le nameserver 10.92.1.11
 
 
 ### La nouvelle version
