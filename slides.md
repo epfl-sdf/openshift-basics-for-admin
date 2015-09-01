@@ -279,11 +279,16 @@ Pourquoi un district ?
 
 * Documentation d'Openshift Origin M4 : [https://docs.openshift.org/origin-m4/index.html][doc]
 
+. . .
+
+* Pour jouer : [https://openshift-demo.si.epfl.ch][openshift-demo]
+
 
 [openshift]: https://www.openshift.com/
 [exemple]: https://github.com/AblionGE/puppet-openshift-origin-example
 [OE]: http://www.slideshare.net/AliSadeghiArdestani/pn-t3-openshift
 [doc]: https://docs.openshift.org/origin-m4/index.html
+[openshift-demo]: https://openshift-demo.si.epfl.ch
 
 
 ### La nouvelle version
